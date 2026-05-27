@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investigadores — Lumina Labstech</title>
+  <meta name="description" content="Investigadores y colaboradores de la red Lumina Labstech en tecnología educativa y ciencias cognitivas.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A6B5C'/><circle cx='16' cy='13' r='5' fill='none' stroke='white' stroke-width='2'/><line x1='16' y1='18' x2='16' y2='24' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+      </div>
+      <div>
+        <div class="nav__logo-text">Lumina Labstech</div>
+        <div class="nav__logo-sub">Red de Investigación</div>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="articulos.html">Artículos</a></li>
+      <li><a href="publicaciones.html">Publicaciones</a></li>
+      <li><a href="colaboradores.html" class="active">Colaboradores</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="btn-icon" data-action="toggle-theme" title="Cambiar tema" aria-label="Cambiar tema">
+        <svg class="theme-icon-dark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-light" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="btn-icon nav__mobile-toggle" data-action="open-menu" aria-label="Menú">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__head">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+      </div>
+      <div class="nav__logo-text">Lumina Labstech</div>
+    </a>
+    <button class="btn-icon" data-action="close-menu" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-menu__links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="articulos.html">Artículos</a></li>
+    <li><a href="publicaciones.html">Publicaciones</a></li>
+    <li><a href="colaboradores.html">Colaboradores</a></li>
+  </ul>
+</div>
+
+<!-- ── Page header ─────────────────────────────────────────── -->
+<div class="container">
+  <div class="page-header">
+    <div class="page-header__eyebrow">La red</div>
+    <h1 class="page-header__title">Investigadores</h1>
+    <p class="page-header__desc">Académicos, doctorantes e investigadores independientes que contribuyen con artículos y publicaciones científicas a Lumina Labstech.</p>
+  </div>
+</div>
+
+<!-- ── Search ──────────────────────────────────────────────── -->
+<div class="container" style="margin-bottom:2.5rem">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+    <div class="filter-bar" style="margin-bottom:0">
+      <button class="filter-btn active" data-group="field" data-filter="all">Todos los campos</button>
+      <button class="filter-btn" data-group="field" data-filter="Consciencia">Consciencia</button>
+      <button class="filter-btn" data-group="field" data-filter="IA Educativa">IA Educativa</button>
+      <button class="filter-btn" data-group="field" data-filter="Tecnología Educativa">Tec. Educativa</button>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="searchCollabs" placeholder="Buscar investigadores…">
+    </div>
+  </div>
+</div>
+
+<!-- ── Collab grid ─────────────────────────────────────────── -->
+<div class="container" style="padding-bottom:4rem">
+  <div class="collab-grid" id="collabs-grid">
+    <!-- Rendered by JS -->
+  </div>
+</div>
+
+<!-- ── Join CTA ────────────────────────────────────────────── -->
+<div class="container" style="padding-bottom:5rem">
+  <div class="cta-banner reveal">
+    <div class="cta-banner__text">
+      <h2>Únete a la red</h2>
+      <p>¿Trabajas en tecnología educativa, ciencias cognitivas, IA educativa o campos relacionados? Comparte tus investigaciones con nuestra comunidad. Publicamos artículos de divulgación y listamos tus publicaciones científicas con DOI.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:.75rem;flex-shrink:0">
+      <a href="mailto:soulness356@gmail.com?subject=Quiero ser colaborador de Lumina Labstech" class="btn btn--white">
+        Contactar al equipo
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <div style="font-size:.78rem;color:rgba(255,255,255,.65);text-align:center">Respuesta en 24–48 h</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Process ────────────────────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal">
+      <div>
+        <div class="section__label">Cómo funciona</div>
+        <h2 class="section__title">Proceso de incorporación</h2>
+      </div>
+    </div>
+    <div class="grid-3 reveal">
+      <div style="padding:1.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg)">
+        <div style="width:36px;height:36px;background:var(--accent-bg);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700">1</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem">Contacto inicial</h3>
+        <p style="font-size:.875rem">Escríbenos con una breve presentación: institución, línea de investigación y lo que quieres aportar.</p>
+      </div>
+      <div style="padding:1.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg)">
+        <div style="width:36px;height:36px;background:var(--accent-bg);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700">2</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem">Perfil y contenido</h3>
+        <p style="font-size:.875rem">Creamos tu perfil de colaborador y listas tus publicaciones. Puedes enviar artículos de divulgación propios.</p>
+      </div>
+      <div style="padding:1.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg)">
+        <div style="width:36px;height:36px;background:var(--accent-bg);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--accent);font-weight:700">3</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem">Publicación</h3>
+        <p style="font-size:.875rem">Tu contenido se publica con tu autoría y aparece en el buscador de la red. Sin costo, sin exclusividad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="margin-bottom:.75rem;display:inline-flex">
+          <div class="nav__logo-mark">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+          </div>
+          <div class="nav__logo-text">Lumina Labstech</div>
+        </a>
+        <p>Red de investigación en tecnología educativa y ciencias cognitivas.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Explorar</div>
+        <ul class="footer__links">
+          <li><a href="articulos.html">Artículos de divulgación</a></li>
+          <li><a href="publicaciones.html">Publicaciones científicas</a></li>
+          <li><a href="colaboradores.html">Investigadores</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <ul class="footer__links">
+          <li><a href="mailto:soulness356@gmail.com">soulness356@gmail.com</a></li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2024–2026 Lumina Labstech · Querétaro, México</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

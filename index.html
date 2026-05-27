@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Labstech — Red de Investigación en Tecnología Educativa</title>
+  <meta name="description" content="Espacio de divulgación científica y producción académica en tecnología educativa, ciencia de la consciencia e inteligencia artificial con perspectiva pedagógica crítica.">
+  <meta property="og:title" content="Lumina Labstech">
+  <meta property="og:description" content="Red de investigación en tecnología educativa y ciencias cognitivas.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A6B5C'/><circle cx='16' cy='13' r='5' fill='none' stroke='white' stroke-width='2'/><line x1='16' y1='18' x2='16' y2='24' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+      </div>
+      <div>
+        <div class="nav__logo-text">Lumina Labstech</div>
+        <div class="nav__logo-sub">Red de Investigación</div>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="articulos.html">Artículos</a></li>
+      <li><a href="publicaciones.html">Publicaciones</a></li>
+      <li><a href="colaboradores.html">Colaboradores</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="btn-icon" data-action="toggle-theme" title="Cambiar tema" aria-label="Cambiar tema">
+        <svg class="theme-icon-dark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-light" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="btn-icon nav__mobile-toggle" data-action="open-menu" aria-label="Menú">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Mobile Menu ─────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__head">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+      </div>
+      <div class="nav__logo-text">Lumina Labstech</div>
+    </a>
+    <button class="btn-icon" data-action="close-menu" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-menu__links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="articulos.html">Artículos</a></li>
+    <li><a href="publicaciones.html">Publicaciones</a></li>
+    <li><a href="colaboradores.html">Colaboradores</a></li>
+  </ul>
+</div>
+
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__eyebrow">Red de Investigación activa</div>
+    <h1 class="hero__title">
+      Ciencia que se<br>
+      <em>comparte</em> y crece
+    </h1>
+    <p class="hero__desc">
+      Espacio de divulgación científica y producción académica en tecnología educativa, ciencia de la consciencia e inteligencia artificial con perspectiva pedagógica crítica.
+    </p>
+    <div class="hero__actions">
+      <a href="articulos.html" class="btn btn--primary">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Explorar artículos
+      </a>
+      <a href="colaboradores.html" class="btn btn--ghost">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        Ver colaboradores
+      </a>
+    </div>
+    <div class="hero__stats reveal">
+      <div>
+        <div class="hero__stat-num" id="stat-articles">5</div>
+        <div class="hero__stat-label">Artículos de divulgación</div>
+      </div>
+      <div>
+        <div class="hero__stat-num" id="stat-papers">2</div>
+        <div class="hero__stat-label">Publicaciones científicas</div>
+      </div>
+      <div>
+        <div class="hero__stat-num" id="stat-collabs">1</div>
+        <div class="hero__stat-label">Investigadores</div>
+      </div>
+      <div>
+        <div class="hero__stat-num">2024</div>
+        <div class="hero__stat-label">Año de fundación</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Featured Articles ───────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal">
+      <div>
+        <div class="section__label">Divulgación científica</div>
+        <h2 class="section__title">Artículos recientes</h2>
+      </div>
+      <a href="articulos.html" class="section__link">
+        Ver todos
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+    <div class="card-grid card-grid--3" id="articles-grid">
+      <!-- Rendered by JS from data.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ── About ───────────────────────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="about-strip">
+      <div class="about-strip__visual reveal">
+        <div class="about-strip__bg-card"></div>
+        <p class="about-strip__quote">
+          La consciencia no es lo que el cerebro produce: es el canal a través del cual el Self se comunica con la realidad física que lo sostiene.
+        </p>
+      </div>
+      <div class="about-strip__content reveal reveal-delay-2">
+        <div class="section__label">Quiénes somos</div>
+        <h2 class="section__title" style="margin-bottom:1.25rem">Un laboratorio de ideas en la frontera del conocimiento</h2>
+        <p>Lumina Labstech es un espacio de investigación e innovación tecnopedagógica fundado por Luis Francisco Pardo Pera desde el Doctorado en Tecnología Educativa de la UAQ.</p>
+        <p style="margin-top:.75rem">Aquí convergen la ciencia de la consciencia, la inteligencia artificial explicable y la pedagogía crítica. Nuestro objetivo: producir conocimiento que sea riguroso <em>y</em> accesible.</p>
+        <div style="margin-top:1.75rem">
+          <a href="colaboradores.html" class="btn btn--primary">
+            Unirse como colaborador
+            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Publications preview ───────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal">
+      <div>
+        <div class="section__label">Producción académica</div>
+        <h2 class="section__title">Publicaciones científicas</h2>
+      </div>
+      <a href="publicaciones.html" class="section__link">
+        Ver todas
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+    <div class="paper-list" id="papers-list">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ── Collaborators preview ──────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal">
+      <div>
+        <div class="section__label">La red</div>
+        <h2 class="section__title">Investigadores</h2>
+      </div>
+      <a href="colaboradores.html" class="section__link">
+        Ver todos
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+    <div class="collab-grid" id="collabs-grid-home">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-banner__text">
+        <h2>¿Quieres publicar tu investigación aquí?</h2>
+        <p>Si trabajas en tecnología educativa, ciencias cognitivas o campos relacionados, Lumina Labstech es tu espacio. Comparte tus artículos de divulgación y publicaciones científicas con nuestra comunidad.</p>
+      </div>
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <a href="mailto:soulness356@gmail.com?subject=Colaboración Lumina Labstech" class="btn btn--white">
+          Escribir al equipo
+          <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="colaboradores.html" class="btn btn--outline-white">Ver colaboradores</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="margin-bottom:.75rem;display:inline-flex">
+          <div class="nav__logo-mark">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+          </div>
+          <div class="nav__logo-text">Lumina Labstech</div>
+        </a>
+        <p>Red de investigación en tecnología educativa y ciencias cognitivas. Divulgación rigurosa, accesible y en español.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Explorar</div>
+        <ul class="footer__links">
+          <li><a href="articulos.html">Artículos de divulgación</a></li>
+          <li><a href="publicaciones.html">Publicaciones científicas</a></li>
+          <li><a href="colaboradores.html">Investigadores</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Temas</div>
+        <ul class="footer__links">
+          <li><a href="articulos.html">Consciencia</a></li>
+          <li><a href="articulos.html">IA Educativa</a></li>
+          <li><a href="articulos.html">Evolución</a></li>
+          <li><a href="articulos.html">Tecnología Educativa</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <ul class="footer__links">
+          <li><a href="mailto:soulness356@gmail.com">soulness356@gmail.com</a></li>
+          <li><a href="https://github.com/luminalabstech" target="_blank">GitHub</a></li>
+          <li><a href="colaboradores.html">Unirse como colaborador</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2024–2026 Lumina Labstech · Fundado por Luis Francisco Pardo Pera</span>
+      <span class="footer__orcid">UAQ · Doctorado en Tecnología Educativa · Querétaro, México</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Update stats from data
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof DATA !== 'undefined') {
+      document.getElementById('stat-articles').textContent = DATA.articles.length;
+      document.getElementById('stat-papers').textContent   = DATA.papers.length;
+      document.getElementById('stat-collabs').textContent  = DATA.collaborators.length;
+    }
+  });
+</script>
+</body>
+</html>

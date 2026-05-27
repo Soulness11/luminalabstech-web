@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicaciones Científicas — Lumina Labstech</title>
+  <meta name="description" content="Artículos científicos publicados por investigadores de Lumina Labstech con DOI y ligas de acceso.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231A6B5C'/><circle cx='16' cy='13' r='5' fill='none' stroke='white' stroke-width='2'/><line x1='16' y1='18' x2='16' y2='24' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+      </div>
+      <div>
+        <div class="nav__logo-text">Lumina Labstech</div>
+        <div class="nav__logo-sub">Red de Investigación</div>
+      </div>
+    </a>
+    <ul class="nav__links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="articulos.html">Artículos</a></li>
+      <li><a href="publicaciones.html" class="active">Publicaciones</a></li>
+      <li><a href="colaboradores.html">Colaboradores</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="btn-icon" data-action="toggle-theme" title="Cambiar tema" aria-label="Cambiar tema">
+        <svg class="theme-icon-dark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-icon-light" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="btn-icon nav__mobile-toggle" data-action="open-menu" aria-label="Menú">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__head">
+    <a href="index.html" class="nav__logo">
+      <div class="nav__logo-mark">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+      </div>
+      <div class="nav__logo-text">Lumina Labstech</div>
+    </a>
+    <button class="btn-icon" data-action="close-menu" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-menu__links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="articulos.html">Artículos</a></li>
+    <li><a href="publicaciones.html">Publicaciones</a></li>
+    <li><a href="colaboradores.html">Colaboradores</a></li>
+  </ul>
+</div>
+
+<!-- ── Page header ─────────────────────────────────────────── -->
+<div class="container container--narrow">
+  <div class="page-header">
+    <div class="page-header__eyebrow">Producción académica</div>
+    <h1 class="page-header__title">Publicaciones científicas</h1>
+    <p class="page-header__desc">Artículos arbitrados, capítulos de libro y presentaciones en congreso. Incluye DOI y ligas de acceso cuando están disponibles.</p>
+  </div>
+</div>
+
+<!-- ── Filter + Search ────────────────────────────────────── -->
+<div class="container container--narrow">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem">
+    <div class="filter-bar" style="margin-bottom:0">
+      <button class="filter-btn active" data-group="ptype" data-filter="all">Todos</button>
+      <button class="filter-btn" data-group="ptype" data-filter="article">Artículos</button>
+      <button class="filter-btn" data-group="ptype" data-filter="chapter">Capítulos</button>
+      <button class="filter-btn" data-group="ptype" data-filter="congress">Congresos</button>
+    </div>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" id="searchPapers" placeholder="Buscar publicaciones…">
+    </div>
+  </div>
+</div>
+
+<!-- ── Papers list ────────────────────────────────────────── -->
+<div class="container container--narrow" style="padding-bottom:3rem">
+  <div class="paper-list" id="papers-list">
+    <!-- Rendered by JS -->
+  </div>
+</div>
+
+<!-- ── How to add ──────────────────────────────────────────── -->
+<div class="container container--narrow" style="padding-bottom:5rem">
+  <div style="padding:2rem;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--radius-lg);display:flex;gap:1.5rem;align-items:flex-start" class="reveal">
+    <div style="width:40px;height:40px;background:var(--accent-bg);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+      <svg style="width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    </div>
+    <div>
+      <div style="font-weight:600;color:var(--text);margin-bottom:.35rem">¿Eres colaborador y quieres agregar una publicación?</div>
+      <p style="font-size:.875rem;margin-bottom:1rem">Escríbenos con el título, autores, revista, DOI (si aplica) y resumen. Lo agregamos en 24 horas.</p>
+      <a href="mailto:soulness356@gmail.com?subject=Nueva publicación para Lumina Labstech" class="btn btn--ghost" style="font-size:.85rem;padding:.45rem 1rem">
+        <svg style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Enviar por correo
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="margin-bottom:.75rem;display:inline-flex">
+          <div class="nav__logo-mark">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><line x1="12" y1="15" x2="12" y2="21"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+          </div>
+          <div class="nav__logo-text">Lumina Labstech</div>
+        </a>
+        <p>Red de investigación en tecnología educativa y ciencias cognitivas.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Explorar</div>
+        <ul class="footer__links">
+          <li><a href="articulos.html">Artículos de divulgación</a></li>
+          <li><a href="publicaciones.html">Publicaciones científicas</a></li>
+          <li><a href="colaboradores.html">Investigadores</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contacto</div>
+        <ul class="footer__links">
+          <li><a href="mailto:soulness356@gmail.com">soulness356@gmail.com</a></li>
+          <li><a href="colaboradores.html">Unirse como colaborador</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">UAQ · DTE</div>
+        <ul class="footer__links">
+          <li><a href="https://www.uaq.mx" target="_blank">Universidad Autónoma de Querétaro</a></li>
+          <li><a href="#">Doctorado en Tecnología Educativa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2024–2026 Lumina Labstech · Querétaro, México</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
