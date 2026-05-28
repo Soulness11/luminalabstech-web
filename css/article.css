@@ -1,0 +1,253 @@
+/* ============================================================
+   LUMINA LABSTECH — Article Page Styles
+   ============================================================ */
+
+/* ── Layout ──────────────────────────────────────────────── */
+.article-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 2.5rem);
+}
+
+/* ── Hero ────────────────────────────────────────────────── */
+.article-hero {
+  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin-bottom: 1.5rem;
+  font-size: .8rem;
+  color: var(--text-light);
+  list-style: none;
+}
+.breadcrumb a { color: var(--text-muted); transition: color .15s; }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb svg { width: 14px; height: 14px; stroke: var(--text-light); fill: none; stroke-width: 2; stroke-linecap: round; }
+
+.article-meta-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -.025em;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+.article-title--accent { color: var(--accent); }
+
+.article-deck {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.article-byline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.article-byline__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.article-read-time {
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .8rem;
+  color: var(--text-light);
+}
+.article-read-time svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.75; stroke-linecap: round; }
+
+.article-date {
+  font-size: .8rem;
+  color: var(--text-light);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Body ────────────────────────────────────────────────── */
+.article-body {
+  padding-bottom: clamp(4rem, 8vw, 7rem);
+}
+
+.article-body h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  color: var(--text);
+  letter-spacing: -.02em;
+  margin-top: 3rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: .6rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.article-body h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+}
+
+.article-lead {
+  font-size: clamp(1.05rem, 1.5vw, 1.15rem);
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.article-body p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  margin-bottom: 1.35rem;
+}
+
+.article-body p strong { color: var(--text); font-weight: 600; }
+.article-body p em { font-style: italic; color: var(--text); }
+
+/* ── Pull quote ──────────────────────────────────────────── */
+.pull-quote {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 2.5rem 0;
+  padding: 1.5rem 1.75rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-bg);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  position: relative;
+}
+
+.pull-quote--featured {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  padding: 2rem 2rem;
+  border-left-width: 5px;
+  background: linear-gradient(135deg, var(--accent-bg) 0%, color-mix(in srgb, var(--accent) 5%, var(--bg)) 100%);
+}
+
+/* ── References ──────────────────────────────────────────── */
+.article-references {
+  margin-top: 3.5rem;
+  padding: 2rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.article-references h3 {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+.article-references ol {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.article-references li {
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.article-references li em { font-style: italic; }
+
+/* ── Share ───────────────────────────────────────────────── */
+.article-share {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--bg-card);
+}
+.article-share__label {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.article-share__btns {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+/* ── Author bio ──────────────────────────────────────────── */
+.article-author {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card);
+}
+.article-author__name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: .2rem;
+}
+.article-author__role {
+  font-size: .78rem;
+  color: var(--accent);
+  margin-bottom: .6rem;
+  font-weight: 500;
+}
+.article-author__bio {
+  font-size: .875rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ── Progress bar ────────────────────────────────────────── */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--accent);
+  z-index: 999;
+  transition: width .1s linear;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .article-byline { flex-direction: column; align-items: flex-start; gap: .75rem; }
+  .article-share { flex-direction: column; }
+  .article-author { flex-direction: column; }
+  .pull-quote { margin-left: -.5rem; margin-right: -.5rem; }
+}
